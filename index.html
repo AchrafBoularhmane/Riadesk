@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="”format-detection”" content="”telephone" ="no”" />
+    <meta name="description" content="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=5, width=device-width" />
+    <link rel="canonical" href="https://riadesk.ma" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>RIADESK | Lorem ipsum dolor sit amet.</title>
+  </head>
+  <body>
+    <!---------------------------------------------------------HOME SECTION------------------------------------------------------>
+    <section class="home-section" id="home">
+      <!--Cookies START-->
+      <div class="cookies" id="cookie">
+        <i class="fa fa-times" aria-hidden="true" id="close-cookies" onclick="Close()"></i>
+        <div class="cookies-container">
+          <h2>Utilisation des COOKIES<i class="fas fa-cookie-bite"></i></h2>
+          <p>En poursuivant votre navigation sur ce site, vous acceptez nos conditions générales et l’utilisation de cookies pour vous garantir la meilleure expérience sur notre site</p>
+          <a href="#" id="ok"> J'accepte </a><a href="./mentions legales/mentions.html" id="ensavoirplus"> en savoir plus</a>
+        </div>
+      </div>
+      <!-- Back to top START -->
+      <a class="backToTop" id="backTop">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-up" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="16" y1="9" x2="12" y2="5" />
+          <line x1="8" y1="9" x2="12" y2="5" />
+        </svg>
+      </a>
+      <!--  Back to top END -->
+      <!--Cookies END-->
+      <!-- Image Slider START-->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <!--Radio Button START-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--Radio Button END-->
+            <!--Slides Images START-->
+            <div class="slide first">
+              <img src="./pictures/slide1.jpg" srcset="./pictures/slide1(Moyen).jpg 400w, ./pictures/slide1(Petit).jpg 100w" alt="first image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="./pictures/slide2.jpg" srcset="./pictures/slide2(Moyen).jpg 400w, ./pictures/slide2(Petit).jpg 100w" alt="second image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="./pictures/slide3.jpg" srcset="./pictures/slide3(Moyen).jpg 400w, ./pictures/slide3(Petit).jpg 100w" alt="third image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="./pictures/slide4.jpg" srcset="./pictures/slide4(Moyen).jpg 400w, ./pictures/slide4(Petit).jpg 100w" alt="fourth image slider" width="100%" height="100%" />
+            </div>
+            <!--Slides Images END-->
+            <!--Automatic Navigation START-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Automatic Navigation END-->
+          </div>
+          <!--Manual Navigation START-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+      <!--Manual Navigation END-->
+      <!-- Image Slider END-->
+      <div class="content-container">
+        <!--Social Media links START-->
+        <div class="icons">
+          <div class="border-top"></div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a rel="noopener" href="https://www.linkedin.com/showcase/Riadesk-/about/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.twitter.com/riadesk/" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://web.facebook.com/Riadesk/" target="_blank" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.instagram.com/riadesk/" target="_blank" aria-label="insta"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="border-bottom"></div>
+        </div>
+        <!--Social Media links END-->
+        <!-- Home Content START -->
+        <div class="content">
+          <!--Logo + Navbar START-->
+          <div class="LogoAndNavbar">
+            <div class="logo">
+              <a href="./index.html#home">LOGO</a>
+            </div>
+            <div class="Navbar" id="menu-overlay" onclick="toggleoff()">
+              <ul>
+                <li><span>01.</span><a href="./index.html#home">Accueil</a></li>
+                <li><span>02.</span><a href="./index.html#about">à propos</a></li>
+                <li><span>03.</span><a href="./index.html#Services">Nos Services</a></li>
+                <li><span>04.</span><a href="./index.html#Offres">Nos offres</a></li>
+                <li class="contact-navbar">
+                  <a href="./index.html#Contact"><button>Contactez-nous</button> </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mobile navbar START-->
+            <div class="toggle" id="Menu" onclick="toggle()">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+              <span class="four"></span>
+            </div>
+            <!-- Mobile navbar END-->
+          </div>
+          <!--Logo + Navbar END-->
+          <!--Home Description START-->
+          <div class="home-description-container">
+            <div class="description-content">
+              <div class="description-text">
+                <div class="small-title">
+                  <div class="title-barre"></div>
+                  <div class="small-title-text"><h4>Lorem, ipsum dolor.</h4></div>
+                </div>
+                <div class="big-title">
+                  <h1>Lorem, ipsum dolor.</h1>
+                </div>
+                <div class="text">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis dolore placeat inventore sunt ullam natus neque, tempora numquam, dolorum nihil eveniet sed reiciendis totam expedita iste? Fugit optio corrupti ipsum.</p>
+                </div>
+              </div>
+              <div class="description-buttons">
+                <a href="#"><button class="btn1">Lorem dolor</button></a>
+                <a href="#"><button class="btn2">Lorem dolor</button></a>
+              </div>
+            </div>
+            <div class="home-style">
+              <div class="tile1"></div>
+              <div class="tile2"></div>
+            </div>
+          </div>
+          <!--Home Description END-->
+          <!--Bottom Description START-->
+          <div class="bottom-description-container">
+            <div class="all-parts">
+              <div class="part1">
+                <div class="part11">
+                  <p>Lorem ipsum dolor sit amet.?</p>
+                </div>
+                <div class="part12">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorem in et maxime ratione unde tempora aliquam. Ab, temporibus. In?</p>
+                </div>
+              </div>
+              <div class="part2">
+                <div class="part21">
+                  <div>
+                    <h3>Lorem, ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div>
+                    <h3>Lorem, ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div>
+                    <h3>Lorem, ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <div class="part22">
+                  <p>Lorem ipsum dolor sit amet.?</p>
+                </div>
+              </div>
+            </div>
+            <!--Next section button START-->
+            <div class="next-section">
+              <a href="./index.html#about">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-down" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="16" y1="15" x2="12" y2="19" />
+                  <line x1="8" y1="15" x2="12" y2="19" />
+                </svg>
+              </a>
+            </div>
+            <!--Next section button END-->
+          </div>
+          <!--Bottom Description END-->
+        </div>
+        <!-- Home Content END -->
+      </div>
+    </section>
+    <!---------------------------------------------------------ABOUT SECTION------------------------------------------------------>
+    <section class="about-section" id="about">
+      <div class="about-text">
+        <div class="title">
+          <div class="small"><p>Lorem ipsum dolor sit.</p></div>
+          <div class="medium">
+            <div class="medium-style"></div>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Perferendis</span> ipsa iusto pariatur ipsum expedita officiis fugit facere omnis dolor nisi ea aperiam rem tenetur ad, est officia <span>asperiores</span> similique vitae laborum. Officia animi labore autem odit pariatur.<br /><br />
+            Aliquam, culpa quisquam quidem sed quam officiis <span>asperiores</span> error. Nihil commodi, consequuntur, illo cumque magni ipsa <span>enim ab</span> laudantium officiis nisi sunt eius <span>ipsam</span>, fuga beatae at velit et similique saepe <span>deleniti</span> minima quis ipsum debitis. Impedit voluptatum rerum deserunt velit nisi
+            maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /><br />
+          </p>
+        </div>
+
+        <div class="about-button">
+          <a href="#" class="link1">Lorem, ipsum.</a>
+          <a href="#">Lorem, ipsum.</a>
+        </div>
+      </div>
+      <div class="about-picture">
+        <div class="about-pic-bg"></div>
+        <div class="about-pic-bg2"></div>
+        <img src="./pictures/aboutpicture.jpg" srcset="./pictures/aboutpicture(Moyen).jpg 400w, ./pictures/aboutpicture(Petit).jpg 100w" alt="about image" width="100%" height="100%" />
+      </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="script.js"></script>
+</html>
