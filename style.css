@@ -32,6 +32,34 @@
   touch-action: none;
   -ms-touch-action: none;
 }
+/*onscroll animation*/
+.reveal-loaded [class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0s;
+}
+.reveal-loaded .reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal-loaded .reveal-2 {
+  transition-delay: 0.1s;
+}
+.reveal-loaded .reveal-3 {
+  transition-delay: 0.2s;
+}
+.reveal-loaded .reveal-4 {
+  transition-delay: 0.3s;
+}
+.reveal-loaded .reveal-5 {
+  transition-delay: 0.4s;
+}
+/*Safari phone numbers detection*/
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
 
 /*------------------------------------------------------HOME SECTION---------------------------------------------------------*/
 .home-section {
@@ -364,8 +392,7 @@
   font-weight: 500;
   max-width: 500px;
 }
-.description-buttons a .btn1,
-.description-buttons a .btn2 {
+.description-buttons a .btn1 {
   padding: var(--padding-button-web);
   border: 1px solid var(--second-color);
   color: var(--text-white-color);
@@ -374,16 +401,9 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 }
-.description-buttons a .btn2 {
-  color: var(--second-color);
-  background: transparent;
-  margin-left: 20px;
-}
-.description-buttons a .btn2:hover {
-  color: var(--text-white-color);
-  background: var(--second-color);
-}
+
 .home-style {
   display: flex;
   opacity: 0.6;
