@@ -39,11 +39,9 @@ document.getElementById("ensavoirplus").addEventListener("click", function (even
 var height = $("#Apropos").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
-    $("#Home").removeClass("active");
     $(".backToTop").addClass("top");
     $(".LogoAndNavbar").addClass("fix-navbar");
   } else {
-    $("#Accueil").addClass("active");
     $(".backToTop").removeClass("top");
     $(".LogoAndNavbar").removeClass("fix-navbar");
   }

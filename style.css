@@ -15,12 +15,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #fff;
 }
-
 ::-webkit-scrollbar-thumb {
   height: 250px;
   background: var(--second-color);
@@ -49,12 +47,7 @@
 .reveal-loaded .reveal-3 {
   transition-delay: 0.2s;
 }
-.reveal-loaded .reveal-4 {
-  transition-delay: 0.3s;
-}
-.reveal-loaded .reveal-5 {
-  transition-delay: 0.4s;
-}
+
 /*Safari phone numbers detection*/
 a[href^="tel"] {
   text-decoration: inherit;
