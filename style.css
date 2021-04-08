@@ -341,6 +341,10 @@ a[href^="tel"] {
   padding: var(--padding-button-web);
   cursor: pointer;
   outline: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  outline: none;
 }
 .LogoAndNavbar .Navbar ul .contact-navbar a button:hover {
   background: var(--second-color);
@@ -401,6 +405,10 @@ a[href^="tel"] {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   outline: none;
 }
 
