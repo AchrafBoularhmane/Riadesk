@@ -29,7 +29,6 @@ function Close() {
   cookies.classList.add("close-cookies");
 }
 document.getElementById("ok").addEventListener("click", function (event) {
-  event.preventDefault();
   cookies.classList.add("close-cookies");
 });
 document.getElementById("ensavoirplus").addEventListener("click", function (event) {
@@ -37,7 +36,7 @@ document.getElementById("ensavoirplus").addEventListener("click", function (even
 });
 
 // Fixing nav bar on scroll //
-var height = $("#Apropos,#Services,#Info-sup1,#Info-sup2,#Points-forts,#Contact").height();
+var height = $("#Apropos").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
     $("#Home").removeClass("active");
