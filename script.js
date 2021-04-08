@@ -24,7 +24,7 @@ setInterval(function () {
   }
 }, 4000);
 // Cookies //
-var cookies = document.getElementById("cookie");
+var cookies = document.getElementById("Cookie");
 function Close() {
   cookies.classList.add("close-cookies");
 }
@@ -37,10 +37,10 @@ document.getElementById("ensavoirplus").addEventListener("click", function (even
 });
 
 // Fixing nav bar on scroll //
-var height = $("#about,#service,#info-sup1,#info-sup2,#points-forts,#Contact").height();
+var height = $("#Apropos,#Services,#Info-sup1,#Info-sup2,#Points-forts,#Contact").height();
 $(window).scroll(function () {
   if ($(this).scrollTop() > height) {
-    $("#home").removeClass("active");
+    $("#Home").removeClass("active");
     $(".backToTop").addClass("top");
     $(".LogoAndNavbar").addClass("fix-navbar");
   } else {
@@ -52,7 +52,7 @@ $(window).scroll(function () {
 
 // Back to top //
 $(document).ready(function () {
-  $("#backTop").click(function () {
+  $("#BackTop").click(function () {
     $("html,body").animate(
       {
         scrollTop: 0,
