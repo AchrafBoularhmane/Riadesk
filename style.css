@@ -589,7 +589,7 @@ a[href^="tel"] {
 @media only screen and (max-width: 600px) {
   .home-section {
     min-width: 100%;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
   }
   /* SLIDER Style RESPONSIVE START */
   .home-section .slider {
@@ -2581,33 +2581,18 @@ a[href^="tel"] {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
   .brand-description {
     width: 35%;
   }
-  .brand-description .footer-icons ul {
-    display: block;
-  }
-  .brand-description .footer-icons ul li {
-    margin-top: 10px;
-  }
   .brand-description .footer-icons ul li a {
     padding: 10px 15px;
-    background: var(--Primary-color);
-    width: 10px;
+    min-width: 30px;
+    font-size: 22px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .brand-description .footer-icons ul {
-    display: flex;
-  }
-  .brand-description .footer-icons ul li {
-    margin-top: 0px;
-  }
-  .brand-description .footer-icons ul li a {
-    min-width: 50px;
-  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*@media only screen and (min-width: 1200px) {
