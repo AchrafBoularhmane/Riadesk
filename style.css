@@ -589,7 +589,7 @@ a[href^="tel"] {
 @media only screen and (max-width: 600px) {
   .home-section {
     min-width: 100%;
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
   }
   /* SLIDER Style RESPONSIVE START */
   .home-section .slider {
