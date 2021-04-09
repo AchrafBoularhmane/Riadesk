@@ -2638,12 +2638,14 @@ a[href^="tel"] {
 @media only screen and (min-width: 768px) {
   .Copyright {
     padding: 10px 15px;
+    width: 100%;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .Copyright {
     padding: 20px 60px;
+    width: 100%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
