@@ -260,9 +260,7 @@ a[href^="tel"] {
   padding: 20px 80px 20px 10px;
   margin-bottom: auto;
 }
-.LogoAndNavbar .logo {
-  margin: auto 0;
-}
+
 .LogoAndNavbar .logo,
 .LogoAndNavbar .Navbar {
   position: relative;
@@ -852,24 +850,9 @@ a[href^="tel"] {
   /* NEXT SECTION RESPONSIVE END */
   /* COOKIES RESPONSIVE START */
   .cookies {
-    padding: 10px;
-    width: 100%;
+    display: none;
   }
-  .cookies .cookies-container {
-    display: block;
-    padding: 5px 0;
-  }
-  .cookies .cookies-container h2 {
-    font-size: 15px;
-  }
-  .cookies .cookies-container p {
-    margin-bottom: 10px;
-    font-size: 13px;
-  }
-  .cookies .cookies-container a {
-    margin: 10px 10px 10px 0px;
-    font-size: 14px;
-  }
+
   /* COOKIES RESPONSIVE END */
   /* BACKTOTOP RESPONSIVE END */
   .backToTop svg {

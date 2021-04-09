@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="”format-detection”" content="”telephone" ="no”" />
+    <meta name="description" content="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=5, width=device-width" />
+    <link rel="canonical" href="https://riadesk.ma" />
+    <link rel="stylesheet" href="./mentions.css" />
+    <link rel="shortcut icon" type="image/png" href="../pictures/" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>RIADESK | Lorem ipsum dolor sit amet.</title>
+  </head>
+  <body>
+    <!---------------------------------------------------------HOME SECTION------------------------------------------------------>
+    <section class="home-section" id="Home">
+      <!--Cookies START-->
+      <div class="cookies reveal-3" id="Cookie">
+        <i class="fa fa-times" aria-hidden="true" id="close-cookies" onclick="Close()"></i>
+        <div class="cookies-container">
+          <h2>Utilisation des COOKIES<i class="fas fa-cookie-bite"></i></h2>
+          <p>En poursuivant votre navigation sur ce site, vous acceptez nos conditions générales et l’utilisation de cookies pour vous garantir la meilleure expérience sur notre site</p>
+          <a href="#" id="ok" rel="noopener" aria-label="cookies-jaccepte"> J'accepte </a><a rel="noopener" aria-label="cookies-jaccepte" href="../mentions/mentions.html" id="ensavoirplus"> En savoir plus</a>
+        </div>
+      </div>
+      <!--Cookies END-->
+      <!-- Back To Top START -->
+      <a class="backToTop reveal-2" id="BackTop" href="#" rel="noopener" aria-label="BackToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-up" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="16" y1="9" x2="12" y2="5" />
+          <line x1="8" y1="9" x2="12" y2="5" />
+        </svg>
+      </a>
+      <!--  Back To Top END -->
+      <!-- Image Slider START-->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <!--Radio Button START-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--Radio Button END-->
+            <!--Slides Images START-->
+            <div class="slide first">
+              <img src="../pictures/slide1.jpg" srcset="../pictures/slide1(Moyen).jpg 400w, ../pictures/slide1(Petit).jpg 100w" alt="first image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide2.jpg" srcset="../pictures/slide2(Moyen).jpg 400w, ../pictures/slide2(Petit).jpg 100w" alt="second image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide3.jpg" srcset="../pictures/slide3(Moyen).jpg 400w, ../pictures/slide3(Petit).jpg 100w" alt="third image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide4.jpg" srcset="../pictures/slide4(Moyen).jpg 400w, ../pictures/slide4(Petit).jpg 100w" alt="fourth image slider" width="100%" height="100%" />
+            </div>
+            <!--Slides Images END-->
+            <!--Automatic Navigation START-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Automatic Navigation END-->
+          </div>
+          <!--Manual Navigation START-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+      <!--Manual Navigation END-->
+      <!-- Image Slider END-->
+      <div class="content-container">
+        <!--Social Media Links START-->
+        <div class="icons">
+          <div class="border-top"></div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a rel="noopener" href="https://www.linkedin.com/showcase/Riadesk-/about/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.twitter.com/riadesk/" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://web.facebook.com/Riadesk/" target="_blank" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.instagram.com/riadesk/" target="_blank" aria-label="insta"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="border-bottom"></div>
+        </div>
+        <!--Social Media Links END-->
+        <!-- Home Content START -->
+        <div class="content">
+          <!--Logo + Navbar START-->
+          <header>
+            <div class="LogoAndNavbar">
+              <div class="logo">
+                <a href="../index.html#home" rel="noopener" aria-label="logo">LOGO</a>
+              </div>
+              <div class="Navbar" id="menu-overlay" onclick="toggleoff()">
+                <ul>
+                  <li><span>01.</span><a href="../index.html#Home" rel="noopener" aria-label="accueil">Accueil</a></li>
+                  <li><span>02.</span><a href="../index.html#Apropos" rel="noopener" aria-label="apropos">à propos</a></li>
+                  <li><span>03.</span><a href="../index.html#Services" rel="noopener" aria-label="nos-services">Nos Services</a></li>
+                  <li><span>04.</span><a href="../index.html#Offres" rel="noopener" aria-label="nos-offres">Nos offres</a></li>
+                  <li class="contact-navbar">
+                    <a href="../index.html#Contact" rel="noopener" aria-label="contact-navbar"><button>Contactez-nous</button> </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Mobile Navbar START-->
+              <div class="toggle" id="Menu" onclick="toggle()">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+              </div>
+              <!-- Mobile Navbar END-->
+            </div>
+          </header>
+          <!--Logo + Navbar END-->
+          <!--Home Description START-->
+          <div class="home-description-container reveal-2">
+            <div class="description-content">
+              <div class="description-text">
+                <div class="big-title">
+                  <h1>Mentions légales</h1>
+                </div>
+                <div class="small-title">
+                  <div class="title-barre"></div>
+                  <div class="small-title-text">
+                    <h4><span>Accueil</span> / Mentions légales</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-style">
+              <div class="tile1"></div>
+              <div class="tile2"></div>
+            </div>
+          </div>
+          <!--Home Description END-->
+          <!--Bottom Description START-->
+          <div class="bottom-description-container reveal-3">
+            <!--Next Section Button START-->
+            <div class="next-section">
+              <a href="../mentions/mentions.html#mentions" rel="noopener" aria-label="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-down" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="16" y1="15" x2="12" y2="19" />
+                  <line x1="8" y1="15" x2="12" y2="19" />
+                </svg>
+              </a>
+            </div>
+            <!--Next Section Button END-->
+          </div>
+          <!--Bottom Description END-->
+        </div>
+        <!-- Home Content END -->
+      </div>
+    </section>
+    <!---------------------------------------------------------MENTIONS LEGALES ----------------------------------------------------->
+    <section class="mentions padding-section" id="mentions">
+      <div class="mentions_newpage">
+        <h1 class="reveal-1">CONDITIONS GÉNÉRALES D’ACCÈS ET D’UTILISATION DU SITE</h1>
+        <div class="trait"></div>
+        <p class="reveal-2">
+          La présente notice légale a pour objet de définir les modalités selon lesquelles <b>riadesk</b> met à la disposition des utilisateurs son site web <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a> ainsi que les conditions suivant lesquelles lesdits utilisateurs accèdent et utilisent ce site.<br />
+          L’utilisation du site <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a> implique l’acceptation pleine et entière des conditions générales d’utilisation décrites ci-aprés.<br />
+          L’accès au site web de <b>riadesk</b> est ouvert 24h sur 24 et 7 jours sur 7, sauf survenance de cas de force majeure, de pannes éventuelles ou de toute opération de maintenance nécessaire au bon fonctionnement dudit site. L’utilisateur doit disposer de la compétence et des moyens nécessaires pour accéder et utiliser ledit site dans les meilleures
+          conditions.<br />
+          Tout accès et/ou utilisation du site web de <b>riadesk</b> suppose l'acceptation et le respect de l'ensemble des termes des présentes conditions et leur acceptation.<br />
+          Il est expressément précisé que toute connexion de l’utilisateur au site web <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a> est subordonnée au respect de se conformer à la présente notice légale.<br />
+          <b>riadesk</b> se réserve le droit de modifier les termes, conditions et mentions à tout moment. Il est ainsi conseillé à l'utilisateur de consulter régulièrement la dernière version des conditions d'utilisation disponible sur le site <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a>
+        </p>
+
+        <h1 class="reveal-3">PROTECTION DES DONNÉES RELATIVES À LA VIE PRIVÉE</h1>
+        <div class="trait reveal-4"></div>
+        <h2 class="reveal-1">Cookies</h2>
+        <p class="reveal-2">
+          Le cookie est un fichier texte qui s’installe sur le disque dur de l’utilisateur. Il permet notamment de recueillir et de stocker des données sur le comportement de navigation à partir du poste connecté. Un cookie ne permet pas d’identifier l’utilisateur. En revanche, il enregistre des informations relatives à sa navigation sur un site, notamment
+          les pages consultées, la date et l'heure de la consultation.<br />
+          Dans le cadre de l’amélioration de services du site web, des cookies pourront être placés sur l’ordinateur de l’utilisateur en vue de générer des statistiques sur l’utilisation du site web de <b>riadesk</b> (les pages les plus visitées, la fréquence d’accès au site, etc.). Il est à noter qu’aucune donnée à caractère personnel identifiable n’est
+          relevée à cette occasion.
+        </p>
+        <h2 class="reveal-3">Vos données personnelles</h2>
+        <p class="reveal-4">
+          Aucune information personnelle n'est collectée à l’insu de l’utilisateur. Dans une logique de respect de la vie privée, <b>riadesk</b>, propriétaire légale du site web <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a> s'engage à ce que la collecte et le traitement d'informations personnelles soient effectués
+          conformément à la loi n°09-08 du 18 février 2009 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel.<br />
+          Aucune information personnelle n'est cédée à des tiers.<br />
+          Conformément aux dispositions de la loi 09-08, <b>riadesk</b> garantit à l'utilisateur un droit d'accès et de rectification, et d'opposition sur les données nominatives le concernant. L'utilisateur a la possibilité d'exercer ce droit en envoyant un courrier électronique à l'adresse suivante : <a href="#">contact@riadesk.ma</a>
+        </p>
+        <h2 class="reveal-5">Formulaire de contact</h2>
+        <p class="reveal-1">
+          Les informations personnelles communiquées à <b>riadesk</b> via les différents formulaires disponibles en ligne sont utilisées uniquement pour répondre aux requêtes de l'utilisateur.<br />
+          Elles ne sont accessibles qu’aux services compétents de l’Autorité, ne sont communiquées à aucun tiers et sont conservées pendant la durée nécessaire à l’instruction des requêtes.
+        </p>
+        <h1 class="reveal-2">PROPRIÉTÉ INTELLECTUELLE</h1>
+        <div class="trait"></div>
+        <p class="reveal-3">
+          Sauf mention contraire, <b>riadesk</b> est titulaire des droits d'auteur sur tous les contenus figurant sur son site web, notamment les textes, les logos et les documents téléchargeables du site. Tous les contenus présents sur le site web de <b>riadesk</b> sont couverts par des droits d'auteur. La reproduction ou la représentation intégrale ou
+          partielle des pages, des données et de tout autre élément constitutif du site web, par quelque procédé ou support que ce soit, sont interdites et constituent, sans autorisation de l'éditeur, une contrefaçon.
+        </p>
+        <h1 class="reveal-4">LIENS HYPERTEXTES</h1>
+        <div class="trait"></div>
+        <p class="reveal-5">
+          Les liens hypertextes mis en place dans le cadre du présent site web en direction d’autres ressources présentes sur le web et notamment, vers ses partenaires, sont clairement identifiés et font l’objet d’une autorisation préalable des sites pointés.<br />
+          L’utilisateur reconnaît que les liens présents sur le site et aiguillant les utilisateurs vers d’autres sites Internet n’engagent pas la responsabilité de <b>riadesk</b> quant aux contenu de ces sites.
+        </p>
+        <h1 class="reveal-1">RESPONSABILITÉ</h1>
+        <div class="trait"></div>
+        <p class="reveal-2">
+          L’utilisateur accède au site web <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a> par l’intermédiaire des réseaux de communications de l’Internet. L’utilisateur déclare en connaître les risques et les accepter. Il reconnaît notamment que les informations qui y transitent ou y sont stockées peuvent être interceptées
+          ou altérées contre la volonté de l’Autorité.<br />
+          Il est cependant fortement recommandé à l’utilisateur de prendre toutes les précautions nécessaires afin de se prémunir contre les effets de la piraterie, notamment en adoptant une configuration informatique sécurisée et adaptée, par la mise en place d’un logiciel de détection de virus régulièrement mis à jour.<br />
+          <b>riadesk</b> ne pourra en aucun cas être tenue pour responsable en cas de contamination du matériel informatique de l’utilisateur au cours ou après la navigation de celui – ci sur le site Internet <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma .</a> <br />
+          De plus, <b>riadesk</b> ne saurait être tenue pour responsable de la mauvaise utilisation des informations ou services par l’utilisateur. <br />
+          En outre, l’Autorité veille à garantir l’exactitude des informations présentes sur son site. Néanmoins, il est expressément précisé que les informations traitées peuvent contenir des inexactitudes techniques ou typographiques. Elle remercie les utilisateurs du présent site de lui faire part d’éventuelles omissions, erreurs ou corrections, en
+          adressant un e-mail au webmaster du site : <a href="#">contact@riadesk.ma</a> .<br />
+          Il est précisé que <b>riadesk</b> ne peut en aucune façon être tenue pour responsable des erreurs éventuelles présentes sur son site, de la complétude des informations traitées, ni d’une absence de disponibilité des informations.<br />
+          <b>riadesk</b> ne pourra voir sa responsabilité engagée en cas d’indisponibilité temporaire du site notamment en cas de maintenance du site ou du serveur sur lequel il est hébergé, en cas d’incident technique et plus généralement en cas d’évènement extérieur à son contrôle.<br />
+        </p>
+        <h1 class="reveal-3">LIMITES DE RESPONSABILITE</h1>
+        <div class="trait"></div>
+        <p class="reveal-4">
+          Les informations mises à disposition sur ce site le sont uniquement à titre purement informatif. En conséquence, l'utilisation des informations et contenus disponibles sur l'ensemble du site, ne sauraient en aucun cas engager la responsabilité de <b>riadesk</b>, à quelque titre que ce soit. L'utilisateur est seul maître de la bonne utilisation,
+          avec discernement et esprit, des informations mises à sa disposition.<br />
+          L'utilisateur s'engage, d'une manière générale, à respecter l'ensemble de la réglementation en vigueur au Maroc.
+        </p>
+        <h1 class="reveal-5">CARACTÈRE DES INFORMATIONS PRÉSENTES SUR CE SITE</h1>
+        <div class="trait"></div>
+        <p class="reveal-1">
+          Les informations présentes sur ce site web n'ont qu'un caractère indicatif et ni leur contenu ni leur exactitude ne peuvent être garantis. Ces informations n'engagent pas contractuellement <b>riadesk</b> qui décline toute responsabilité sur les décisions qui pourraient être prises à partir de ces informations. Le contenu du site est susceptible de
+          modifications sans préavis. Sa mise à jour est quotidienne mais peut être retardée pour des raisons ou contraintes diverses.
+        </p>
+        <h1 class="reveal-2">LOI APPLICABLE</h1>
+        <div class="trait"></div>
+        <p class="reveal-3">Toute difficulté, réclamation ou litige concernant le présent site web seront régis par la loi Marocaine. En cas de litige, seuls les tribunaux marocains sont compétents.</p>
+        <h1 class="reveal-4">COORDONNÉES DE riadesk :</h1>
+        <div class="trait"></div>
+        <p class="reveal-5">
+          2 avenue AL ARZ, secteur 10 Bloc S, HAY RIAD, Rabat<br />
+          Tel : (+212) 7 72 89 57 86<br />
+          Email : <a href="#">contact@riadesk.ma</a><br />
+          Site web : <a href="https://www.riadesk.ma" target="_blank" rel="noopener">www.riadesk.ma</a><br />
+        </p>
+      </div>
+    </section>
+    <!---------------------------------------------------------Footer SECTION---------------------------------------------------->
+    <section class="footer padding-section" id="Footer">
+      <div class="all-footer-parts">
+        <!--Brand Description START-->
+        <div class="brand-description">
+          <h2 class="reveal-1">Riadesk</h2>
+          <!-- underline title-->
+          <div class="underline"></div>
+          <p class="reveal-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolores repudiandae iste molestiae nobis quos pariatur ab velit, sint, magni facere reprehenderit eos beatae. Asperiores.</p>
+          <div class="footer-icons reveal-3">
+            <ul>
+              <li>
+                <a rel="noopener" href="https://web.facebook.com/riadesk/" target="_blank" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.linkedin.com/showcase/riadesk-/about/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.twitter.com/riadesl/" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.instagram.com/riadesk/" target="_blank" aria-label="insta"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Brand Description END-->
+        <div class="footer-part">
+          <div class="footer-part1">
+            <!-- Plan Site START -->
+            <div class="plan-site">
+              <h2 class="reveal-1">Accès rapides</h2>
+              <div class="underline reveal-2"></div>
+              <ul>
+                <li class="reveal-1">
+                  <a href="../index.html#Home" class="active" id="Accueil"><i class="fa fa-angle-right"></i>Accueil</a>
+                </li>
+                <li class="reveal-2">
+                  <a href="../index.html#Apropos"><i class="fa fa-angle-right"></i>à propos</a>
+                </li>
+                <li class="reveal-3">
+                  <a href="../index.html#Services"><i class="fa fa-angle-right"></i>Nos Services</a>
+                </li>
+                <li class="reveal-4">
+                  <a href="../index.html#Offres"><i class="fa fa-angle-right"></i>Nos offres</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Plan Site END -->
+            <!--Contact Footer START-->
+            <div class="contactfoot">
+              <h2 class="reveal-1">contact</h2>
+              <div class="underline reveal-2"></div>
+              <div class="container-footer">
+                <div class="reveal-1">
+                  <span><i class="fa fa-home"></i></span>
+                  <span>2 avenue AL ARZ, secteur 10 Bloc S, HAY RIAD, Rabat</span>
+                </div>
+                <div class="reveal-2">
+                  <span><i class="fa fa-phone"></i></span>
+                  <span>(+212) 5 55 55 55 55</span>
+                </div>
+                <div class="reveal-3">
+                  <span><i class="fa fa-envelope"></i></span>
+                  <span>contact@Riadesk.ma</span>
+                </div>
+              </div>
+            </div>
+            <!--Contact Footer END-->
+          </div>
+          <div class="footer-part2">
+            <!-- Horaire START-->
+            <div class="horaire">
+              <h2 class="reveal-1">Horaire d'ouverture</h2>
+              <div class="underline reveal-2"></div>
+              <div class="horaire-douveture reveal-3">
+                <p><i class="fas fa-calendar-check"></i>Du Lundi au Vendredi 00h00 - 00h00</p>
+              </div>
+              <div class="horaire-douveture reveal-4">
+                <p><i class="fas fa-calendar-check"></i>Samedi 00h00 - 00h00</p>
+              </div>
+            </div>
+            <!-- Horaire END-->
+            <!-- News-Letter START-->
+            <!-- News-Letter END-->
+            <div class="inscription-newsletter">
+              <h2 class="reveal-1">inscription newsletter</h2>
+              <div class="underline reveal-2"></div>
+              <p class="reveal-3">
+                Vous souhaitez recevoir notre actualité dans votre boîte email ?<br />
+                renseignez votre email ci-dessous pour vous inscrire
+              </p>
+              <div class="newsletter reveal-4">
+                <form id="newsletter-submit" method="post" action="../newsletter.php" enctype="multipart/form-data">
+                  <label for="user-email"></label>
+                  <input name="user-email" id="user-email" placeholder="Entrez votre adresse e-mail *" class="input" />
+                  <label for="send"></label>
+                  <input type="submit" name="send" value="Envoyer" class="button" />
+                </form>
+              </div>
+              <span class="email-newsletter"><i class="fa fa-exclamation-triangle"></i>L'adresse e-mail doit être indiquée dans un format approprié</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Newsletter Confirmation Modal START -->
+      <div class="modal-container-NL" id="modal-container-NL">
+        <div class="modal-NL">
+          <h1>Inscription newsletter</h1>
+          <p>
+            Nous avons bien reçu votre demande d'inscription à notre newsletter et nous vous en remercions, vous pouvez désormais recevoir notre actualité sur votre boîte mail.<br />
+            A très bientôt<br />
+            L’équipe <b>RIADESK</b>
+          </p>
+          <button id="close-NL">OK</button>
+        </div>
+      </div>
+      <!--Newsletter Confirmation Modal END -->
+    </section>
+    <!---------------------------------------------------------Copyrights SECTION---------------------------------------------------->
+
+    <div class="Copyright">
+      <!--Copyright START-->
+      <span class="reveal-5">COPYRIGHT <span>©</span> 2021 RIADESK <span>|</span> Tous droits réservés - <a href="../mentions/mentions.html"> MENTIONS LÉGALES </a><span>|</span> SITE INTERNET RÉALISÉ PAR <a href="https://www.skyvibes.ma" rel="noopener" target="_blank">Sky Vibes</a></span>
+    </div>
+    <!--Copyright END-->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./mentions.js"></script>
+</html>

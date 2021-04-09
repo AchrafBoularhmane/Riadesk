@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="”format-detection”" content="”telephone" ="no”" />
+    <meta name="description" content="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=5, width=device-width" />
+    <link rel="canonical" href="https://riadesk.ma" />
+    <link rel="stylesheet" href="./services.css" />
+    <link rel="shortcut icon" type="image/png" href="../pictures/" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>RIADESK | Lorem ipsum dolor sit amet.</title>
+  </head>
+  <body>
+    <!---------------------------------------------------------HOME SECTION------------------------------------------------------>
+    <section class="home-section" id="Home">
+      <!--Cookies START-->
+      <div class="cookies reveal-3" id="Cookie">
+        <i class="fa fa-times" aria-hidden="true" id="close-cookies" onclick="Close()"></i>
+        <div class="cookies-container">
+          <h2>Utilisation des COOKIES<i class="fas fa-cookie-bite"></i></h2>
+          <p>En poursuivant votre navigation sur ce site, vous acceptez nos conditions générales et l’utilisation de cookies pour vous garantir la meilleure expérience sur notre site</p>
+          <a href="#" id="ok" rel="noopener" aria-label="cookies-jaccepte"> J'accepte </a><a rel="noopener" aria-label="cookies-jaccepte" href="../mentions/mentions.html" id="ensavoirplus"> En savoir plus</a>
+        </div>
+      </div>
+      <!--Cookies END-->
+      <!-- Back To Top START -->
+      <a class="backToTop reveal-2" id="BackTop" href="#" rel="noopener" aria-label="BackToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-up" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="16" y1="9" x2="12" y2="5" />
+          <line x1="8" y1="9" x2="12" y2="5" />
+        </svg>
+      </a>
+      <!--  Back To Top END -->
+      <!-- Image Slider START-->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <!--Radio Button START-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--Radio Button END-->
+            <!--Slides Images START-->
+            <div class="slide first">
+              <img src="../pictures/slide1.jpg" srcset="../pictures/slide1(Moyen).jpg 400w, ../pictures/slide1(Petit).jpg 100w" alt="first image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide2.jpg" srcset="../pictures/slide2(Moyen).jpg 400w, ../pictures/slide2(Petit).jpg 100w" alt="second image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide3.jpg" srcset="../pictures/slide3(Moyen).jpg 400w, ../pictures/slide3(Petit).jpg 100w" alt="third image slider" width="100%" height="100%" />
+            </div>
+            <div class="slide">
+              <img src="../pictures/slide4.jpg" srcset="../pictures/slide4(Moyen).jpg 400w, ../pictures/slide4(Petit).jpg 100w" alt="fourth image slider" width="100%" height="100%" />
+            </div>
+            <!--Slides Images END-->
+            <!--Automatic Navigation START-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--Automatic Navigation END-->
+          </div>
+          <!--Manual Navigation START-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+      <!--Manual Navigation END-->
+      <!-- Image Slider END-->
+      <div class="content-container">
+        <!--Social Media Links START-->
+        <div class="icons">
+          <div class="border-top"></div>
+          <div class="icon">
+            <ul>
+              <li>
+                <a rel="noopener" href="https://www.linkedin.com/showcase/Riadesk-/about/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.twitter.com/riadesk/" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://web.facebook.com/Riadesk/" target="_blank" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.instagram.com/riadesk/" target="_blank" aria-label="insta"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="border-bottom"></div>
+        </div>
+        <!--Social Media Links END-->
+        <!-- Home Content START -->
+        <div class="content">
+          <!--Logo + Navbar START-->
+          <header>
+            <div class="LogoAndNavbar">
+              <div class="logo">
+                <a href="../index.html#home" rel="noopener" aria-label="logo">LOGO</a>
+              </div>
+              <div class="Navbar" id="menu-overlay" onclick="toggleoff()">
+                <ul>
+                  <li><span>01.</span><a href="../index.html#Home" rel="noopener" aria-label="accueil">Accueil</a></li>
+                  <li><span>02.</span><a href="../index.html#Apropos" rel="noopener" aria-label="apropos">à propos</a></li>
+                  <li><span>03.</span><a href="../index.html#Services" rel="noopener" aria-label="nos-services">Nos Services</a></li>
+                  <li><span>04.</span><a href="../index.html#Offres" rel="noopener" aria-label="nos-offres">Nos offres</a></li>
+                  <li class="contact-navbar">
+                    <a href="../index.html#Contact" rel="noopener" aria-label="contact-navbar"><button>Contactez-nous</button> </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Mobile Navbar START-->
+              <div class="toggle" id="Menu" onclick="toggle()">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <span class="four"></span>
+              </div>
+              <!-- Mobile Navbar END-->
+            </div>
+          </header>
+          <!--Logo + Navbar END-->
+          <!--Home Description START-->
+          <div class="home-description-container reveal-2">
+            <div class="description-content">
+              <div class="description-text">
+                <div class="big-title">
+                  <h1>Nos services</h1>
+                </div>
+                <div class="small-title">
+                  <div class="title-barre"></div>
+                  <div class="small-title-text">
+                    <h4><span>Accueil</span> / nos services</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-style">
+              <div class="tile1"></div>
+              <div class="tile2"></div>
+            </div>
+          </div>
+          <!--Home Description END-->
+          <!--Bottom Description START-->
+          <div class="bottom-description-container reveal-3">
+            <!--Next Section Button START-->
+            <div class="next-section">
+              <a href="../services/services.html#services" rel="noopener" aria-label="next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-down" viewBox="0 0 24 24" stroke-width="0.3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="12" y1="5" x2="12" y2="19" />
+                  <line x1="16" y1="15" x2="12" y2="19" />
+                  <line x1="8" y1="15" x2="12" y2="19" />
+                </svg>
+              </a>
+            </div>
+            <!--Next Section Button END-->
+          </div>
+          <!--Bottom Description END-->
+        </div>
+        <!-- Home Content END -->
+      </div>
+    </section>
+    <!---------------------------------------------------------Nos Services SECTION---------------------------------------------------->
+    <section class="nos-services padding-section" id="services">
+      <div class="services-container">
+        <div class="service-container-title">
+          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <div class="service-container-title-style"></div>
+        </div>
+        <div class="service-details" id="service1">
+          <div class="service-img">
+            <img src="../pictures/service1.jpg" srcset="../pictures/service1(Moyen).jpg 400w, ../pictures/service1(Petit).jpg 100w" alt="service1" width="100%" height="100%" />
+            <div class="service-img-style"></div>
+            <div class="service-style"></div>
+          </div>
+          <div class="service-content">
+            <div class="title">
+              <div class="style-title"></div>
+              <h2>Lorem, ipsum dolor.</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit exercitationem officia corporis assumenda excepturi natus, magni culpa pariatur aut reprehenderit laudantium qui voluptate voluptas quaerat provident, sit magnam ratione.</p>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-wave-right-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 13.998h4v-4" />
+                  <path d="M3 11.998c.887 1.284 2.48 2.033 4 2c1.52 .033 3.113 -.716 4 -2s2.48 -2.033 4 -2c1.52 -.033 3 1 4 2l2 2" />
+                </svg>
+                <a href="#">À Partir De xxxx DH HT/ mois</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-details" id="service2">
+          <div class="service-img">
+            <img src="../pictures/service2.jpg" srcset="../pictures/service2(Moyen).jpg 400w, ../pictures/service2(Petit).jpg 100w" alt="service1" width="100%" height="100%" />
+            <div class="service-img-style"></div>
+            <div class="service-style"></div>
+          </div>
+          <div class="service-content">
+            <div class="title">
+              <div class="style-title"></div>
+              <h2>Lorem, ipsum dolor.</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit exercitationem officia corporis assumenda excepturi natus, magni culpa pariatur aut reprehenderit laudantium qui voluptate voluptas quaerat provident, sit magnam ratione.</p>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-wave-right-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 13.998h4v-4" />
+                  <path d="M3 11.998c.887 1.284 2.48 2.033 4 2c1.52 .033 3.113 -.716 4 -2s2.48 -2.033 4 -2c1.52 -.033 3 1 4 2l2 2" />
+                </svg>
+                <a href="#">À Partir De xxxx DH HT/ mois</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-details" id="service3">
+          <div class="service-img">
+            <img src="../pictures/service3.jpg" srcset="../pictures/service3(Moyen).jpg 400w, ../pictures/service3(Petit).jpg 100w" alt="service1" width="100%" height="100%" />
+            <div class="service-img-style"></div>
+            <div class="service-style"></div>
+          </div>
+          <div class="service-content">
+            <div class="title">
+              <div class="style-title"></div>
+              <h2>Lorem, ipsum dolor.</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit exercitationem officia corporis assumenda excepturi natus, magni culpa pariatur aut reprehenderit laudantium qui voluptate voluptas quaerat provident, sit magnam ratione.</p>
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checks" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 12l5 5l10 -10" />
+                  <path d="M2 12l5 5m5 -5l5 -5" />
+                </svg>
+                <a href="#">Lorem, ipsum dolor.</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-wave-right-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#33baaa" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 13.998h4v-4" />
+                  <path d="M3 11.998c.887 1.284 2.48 2.033 4 2c1.52 .033 3.113 -.716 4 -2s2.48 -2.033 4 -2c1.52 -.033 3 1 4 2l2 2" />
+                </svg>
+                <a href="#">À Partir De xxxx DH HT/ mois</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------------------Footer SECTION---------------------------------------------------->
+    <section class="footer padding-section" id="Footer">
+      <div class="all-footer-parts">
+        <!--Brand Description START-->
+        <div class="brand-description">
+          <h2 class="reveal-1">Riadesk</h2>
+          <!-- underline title-->
+          <div class="underline"></div>
+          <p class="reveal-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolores repudiandae iste molestiae nobis quos pariatur ab velit, sint, magni facere reprehenderit eos beatae. Asperiores.</p>
+          <div class="footer-icons reveal-3">
+            <ul>
+              <li>
+                <a rel="noopener" href="https://web.facebook.com/riadesk/" target="_blank" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.linkedin.com/showcase/riadesk-/about/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.twitter.com/riadesl/" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a rel="noopener" href="https://www.instagram.com/riadesk/" target="_blank" aria-label="insta"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Brand Description END-->
+        <div class="footer-part">
+          <div class="footer-part1">
+            <!-- Plan Site START -->
+            <div class="plan-site">
+              <h2 class="reveal-1">Accès rapides</h2>
+              <div class="underline reveal-2"></div>
+              <ul>
+                <li class="reveal-1">
+                  <a href="../index.html#Home" class="active" id="Accueil"><i class="fa fa-angle-right"></i>Accueil</a>
+                </li>
+                <li class="reveal-2">
+                  <a href="../index.html#Apropos"><i class="fa fa-angle-right"></i>à propos</a>
+                </li>
+                <li class="reveal-3">
+                  <a href="../index.html#Services"><i class="fa fa-angle-right"></i>Nos Services</a>
+                </li>
+                <li class="reveal-4">
+                  <a href="../index.html#Offres"><i class="fa fa-angle-right"></i>Nos offres</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Plan Site END -->
+            <!--Contact Footer START-->
+            <div class="contactfoot">
+              <h2 class="reveal-1">contact</h2>
+              <div class="underline reveal-2"></div>
+              <div class="container-footer">
+                <div class="reveal-1">
+                  <span><i class="fa fa-home"></i></span>
+                  <span>2 avenue AL ARZ, secteur 10 Bloc S, HAY RIAD, Rabat</span>
+                </div>
+                <div class="reveal-2">
+                  <span><i class="fa fa-phone"></i></span>
+                  <span>(+212) 5 55 55 55 55</span>
+                </div>
+                <div class="reveal-3">
+                  <span><i class="fa fa-envelope"></i></span>
+                  <span>contact@Riadesk.ma</span>
+                </div>
+              </div>
+            </div>
+            <!--Contact Footer END-->
+          </div>
+          <div class="footer-part2">
+            <!-- Horaire START-->
+            <div class="horaire">
+              <h2 class="reveal-1">Horaire d'ouverture</h2>
+              <div class="underline reveal-2"></div>
+              <div class="horaire-douveture reveal-3">
+                <p><i class="fas fa-calendar-check"></i>Du Lundi au Vendredi 00h00 - 00h00</p>
+              </div>
+              <div class="horaire-douveture reveal-4">
+                <p><i class="fas fa-calendar-check"></i>Samedi 00h00 - 00h00</p>
+              </div>
+            </div>
+            <!-- Horaire END-->
+            <!-- News-Letter START-->
+            <!-- News-Letter END-->
+            <div class="inscription-newsletter">
+              <h2 class="reveal-1">inscription newsletter</h2>
+              <div class="underline reveal-2"></div>
+              <p class="reveal-3">
+                Vous souhaitez recevoir notre actualité dans votre boîte email ?<br />
+                renseignez votre email ci-dessous pour vous inscrire
+              </p>
+              <div class="newsletter reveal-4">
+                <form id="newsletter-submit" method="post" action="../newsletter.php" enctype="multipart/form-data">
+                  <label for="user-email"></label>
+                  <input name="user-email" id="user-email" placeholder="Entrez votre adresse e-mail *" class="input" />
+                  <label for="send"></label>
+                  <input type="submit" name="send" value="Envoyer" class="button" />
+                </form>
+              </div>
+              <span class="email-newsletter"><i class="fa fa-exclamation-triangle"></i>L'adresse e-mail doit être indiquée dans un format approprié</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Newsletter Confirmation Modal START -->
+      <div class="modal-container-NL" id="modal-container-NL">
+        <div class="modal-NL">
+          <h1>Inscription newsletter</h1>
+          <p>
+            Nous avons bien reçu votre demande d'inscription à notre newsletter et nous vous en remercions, vous pouvez désormais recevoir notre actualité sur votre boîte mail.<br />
+            A très bientôt<br />
+            L’équipe <b>RIADESK</b>
+          </p>
+          <button id="close-NL">OK</button>
+        </div>
+      </div>
+      <!--Newsletter Confirmation Modal END -->
+    </section>
+    <!---------------------------------------------------------Copyrights SECTION---------------------------------------------------->
+
+    <div class="Copyright">
+      <!--Copyright START-->
+      <span class="reveal-5">COPYRIGHT <span>©</span> 2021 RIADESK <span>|</span> Tous droits réservés - <a href="../mentions/mentions.html"> MENTIONS LÉGALES </a><span>|</span> SITE INTERNET RÉALISÉ PAR <a href="https://www.skyvibes.ma" rel="noopener" target="_blank">Sky Vibes</a></span>
+    </div>
+    <!--Copyright END-->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./services.js"></script>
+</html>
