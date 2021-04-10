@@ -1,18 +1,20 @@
 <?php
-$NomComplet = $_POST['Nom-Complet'];
+$RaisonDeContact = $_POST['Objet'];
+$NomEtPrenom = $_POST['Nom-Complet'];
+$NomEntreprise = $_POST['Nom-Entreprise'];
 $Mobile = $_POST['Mobile'];
 $Email = $_POST['Email'];
-$Objet = $_POST['Objet'];
 $Message = $_POST['Message'];
 
 $email_from = 'noreply@riadesk.ma';
 
-$email_subject = "Nouvelle demande de devis";
+$email_subject = "Nouvelle demande de contact";
 
-$email_body = "Nom Complet: $NomComplet\n".
-              "Mobile: $Mobile\n".
+$email_body = "Raison de Contact: $RaisonDeContact\n".
+              "Nom et Prénom: $NomComplet\n".
+              "Nom de l'entreprise: $NomEntreprise\n".
+              "Numéro de Téléphone: $Mobile\n".
               "Email: $Email\n".
-              "Objet: $Objet\n".
               "Message: $Message\n";
 
 $to = "Admin@riadesk.ma";
