@@ -379,7 +379,7 @@ a[href^="tel"] {
 .description-content .big-title h1 {
   color: var(--text-white-color);
   font-weight: 800;
-  font-size: 40px;
+  font-size: 38px;
   text-transform: uppercase;
 }
 .text p {
@@ -781,7 +781,6 @@ a[href^="tel"] {
     padding: 0 10px;
     width: 100%;
     height: auto;
-    word-break: break-all;
   }
   .description-content {
     min-width: 100%;
@@ -827,10 +826,8 @@ a[href^="tel"] {
     height: 110px;
     border: 3px solid var(--second-color);
     margin-top: 50px;
-    word-break: break-all;
   }
   .home-style .tile2 {
-    word-break: break-all;
     width: 110px;
     height: 110px;
     border: 3px solid var(--text-white-color);
@@ -1074,7 +1071,6 @@ a[href^="tel"] {
   width: 100%;
   background: var(--text-white-color);
   display: flex;
-  word-break: break-all;
 }
 .padding-section {
   padding: 80px;
@@ -1354,10 +1350,11 @@ a[href^="tel"] {
   height: 100%;
   background: #00415ada;
   margin-left: auto;
-  padding: 50px 70px;
+  padding: 50px 200px;
 }
 .info-sup-content .medium h1 {
   color: var(--text-white-color);
+  font-size: 27px;
 }
 .info-sup-content .text p {
   color: var(--text-white-color);
@@ -1422,7 +1419,7 @@ a[href^="tel"] {
 .section-bg-img img {
   width: 100%;
   height: 100%;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 .description {
   display: block;
@@ -1462,10 +1459,22 @@ a[href^="tel"] {
   display: flex;
   justify-content: space-between;
 }
+.services:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
 .services .service {
   position: relative;
   padding: 20px;
   height: 100%;
+  width: 330px;
+}
+.services .service:nth-child(2) {
+  margin-top: 20px;
+}
+.services .service:nth-child(1) {
+  margin-top: 40px;
 }
 .services .service .service-style {
   position: absolute;
@@ -1494,36 +1503,28 @@ a[href^="tel"] {
   height: 18px;
   background: var(--second-color);
 }
-.services .service .points ul li {
-  list-style: none;
-  display: flex;
-  padding: 4px 0px;
-}
-.services .service .points ul li a {
-  text-decoration: none;
-  font-size: 15px;
+.services .service .points p {
   color: var(--text-grey-color);
-  margin: auto;
+  font-size: 15px;
   font-weight: 500;
-  margin-left: 5px;
+  line-height: 25px;
 }
-.services .service1,
-.services .service3 {
-  margin-top: 50px;
+.services .service .points p span {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .services .service .details {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 .services .service .details a {
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
   color: var(--text-grey-color);
-  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   margin-right: 5px;
@@ -1555,7 +1556,7 @@ a[href^="tel"] {
   z-index: 2;
   display: block;
   position: relative;
-  width: 280px;
+  width: 320px;
   height: 350px;
   z-index: 100000000;
   object-fit: cover;
@@ -1574,9 +1575,8 @@ a[href^="tel"] {
   .description .texto {
     padding: 0px 10px;
   }
-
   .services {
-    display: block;
+    display: block !important;
   }
   .services .service {
     margin-bottom: 30px;
@@ -1621,8 +1621,8 @@ a[href^="tel"] {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .services {
-    display: block;
-    padding: 150px 150px 0px 150px;
+    display: flex;
+    padding: 100px 0px 0px 0px;
   }
   .services .service .service-img {
     width: 100%;
@@ -1772,6 +1772,10 @@ a[href^="tel"] {
 }
 .offres-container .offre {
   display: block;
+  margin-right: 20px;
+}
+.offres-container .offre:last-child {
+  margin-right: 0px;
 }
 .offres-container .offre .icon-offre {
   display: flex;
@@ -1780,12 +1784,13 @@ a[href^="tel"] {
   background: var(--second-color);
   margin: auto;
   border-radius: 50%;
+  padding: 20px;
 }
 .offres-container .offre .offre-description {
   color: var(--text-white-color);
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   padding: 15px 0px;
   margin: auto;
   text-align: center;
@@ -1831,7 +1836,6 @@ a[href^="tel"] {
   position: relative;
   height: 100%;
   width: 100%;
-  word-break: break-all;
 }
 .Contact-section .contact {
   position: relative;
@@ -2287,7 +2291,6 @@ a[href^="tel"] {
 .footer {
   position: relative;
   background-color: var(--text-grey-color);
-  word-break: break-all;
 }
 .all-footer-parts {
   position: relative;

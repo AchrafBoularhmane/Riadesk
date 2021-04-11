@@ -714,7 +714,6 @@ a[href^="tel"] {
     padding: 0 10px;
     width: 100%;
     height: auto;
-    word-break: break-all;
   }
   .description-content {
     min-width: 100%;
@@ -747,10 +746,8 @@ a[href^="tel"] {
     height: 110px;
     border: 3px solid var(--second-color);
     margin-top: 50px;
-    word-break: break-all;
   }
   .home-style .tile2 {
-    word-break: break-all;
     width: 110px;
     height: 110px;
     border: 3px solid var(--text-white-color);
@@ -999,7 +996,6 @@ a[href^="tel"] {
   min-height: 100vh;
   width: 100%;
   background: var(--text-white-color);
-  word-break: break-all;
 }
 .services-container .service-container-title {
   display: block;
@@ -1023,10 +1019,11 @@ a[href^="tel"] {
   justify-content: space-between;
   margin-bottom: 80px;
 }
-.service-details:nth-child(3) {
+.service-details:nth-child(3),
+.service-details:nth-child(5),
+.service-details:nth-child(7) {
   flex-direction: row-reverse;
 }
-
 .service-details:last-child {
   margin-bottom: 0px;
 }
@@ -1038,6 +1035,7 @@ a[href^="tel"] {
 .service-details .service-content .title {
   display: flex;
   padding: 5px 0px;
+  margin-bottom: 15px;
 }
 .service-details .service-content .title .style-title {
   width: 35px;
@@ -1051,7 +1049,7 @@ a[href^="tel"] {
   font-size: 25px;
   font-weight: 700;
   color: var(--Primary-color);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .service-details .service-content p {
@@ -1059,6 +1057,9 @@ a[href^="tel"] {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-grey-color);
+}
+.service-details .service-content p span {
+  font-weight: 700;
 }
 .service-details .service-content ul {
   padding: 5px 0px;
@@ -1069,6 +1070,14 @@ a[href^="tel"] {
   justify-content: start;
   padding: 3px 0px;
 }
+.service-details .service-content ul li:first-child a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-grey-color);
+  margin-left: 5px;
+  cursor: context-menu;
+}
 
 .service-details .service-content ul li a {
   text-decoration: none;
@@ -1078,7 +1087,7 @@ a[href^="tel"] {
   margin-left: 5px;
   cursor: context-menu;
 }
-.service-details .service-content ul li:last-child {
+/*.service-details .service-content ul li:last-child {
   padding: 10px 0px;
 }
 .service-details .service-content ul li:last-child a {
@@ -1090,7 +1099,7 @@ a[href^="tel"] {
 }
 .service-details .service-content ul li:last-child a:hover {
   font-size: 19px;
-}
+}*/
 .service-details .service-img {
   width: 350px;
   min-height: 450px;
@@ -1177,7 +1186,6 @@ a[href^="tel"] {
 .footer {
   position: relative;
   background-color: var(--text-grey-color);
-  word-break: break-all;
 }
 .all-footer-parts {
   position: relative;
