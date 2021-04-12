@@ -1380,6 +1380,9 @@ a[href^="tel"] {
     padding: 20px 10px;
     margin: auto;
   }
+  .info-sup-content .medium h1 {
+    font-size: 20px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1462,8 +1465,11 @@ a[href^="tel"] {
 }
 .services:last-child {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0;
+}
+.services:last-child .service {
+  margin: 0 auto;
 }
 .services .service {
   position: relative;
@@ -1473,7 +1479,7 @@ a[href^="tel"] {
 }
 .service6 {
   background: chartreuse;
-  visibility: hidden;
+  display: none;
 }
 .services .service:nth-child(2) {
   margin-top: 20px;
