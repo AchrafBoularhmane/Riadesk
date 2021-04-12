@@ -304,6 +304,7 @@ a[href^="tel"] {
   font-size: 14px;
   font-weight: 700;
   margin-right: 5px;
+  display: none;
 }
 .LogoAndNavbar .Navbar ul li a {
   list-style: none;
@@ -311,7 +312,7 @@ a[href^="tel"] {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-white-color);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .LogoAndNavbar .Navbar ul li a:hover {
   color: var(--second-color);
@@ -1469,6 +1470,10 @@ a[href^="tel"] {
   padding: 20px;
   height: 100%;
   width: 330px;
+}
+.service6 {
+  background: chartreuse;
+  visibility: hidden;
 }
 .services .service:nth-child(2) {
   margin-top: 20px;
