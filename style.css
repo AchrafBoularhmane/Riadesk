@@ -1588,16 +1588,13 @@ a[href^="tel"] {
   }
   .services {
     display: block !important;
+    justify-content: center;
+    padding: 0;
   }
   .services .service {
-    margin-bottom: 30px;
-  }
-  .services .service:last-child {
-    margin-bottom: 0px;
-  }
-  .services .service1,
-  .services .service3 {
-    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
   .services .service .service-img img {
     width: 100%;
