@@ -79,7 +79,6 @@ document.querySelector("#FormContact").addEventListener("submit", function (e) {
   return SubmitContactForm();
 });
 function SubmitContactForm() {
-  alert("Submit contact form ");
   /* User input*/
   let contact_form = {
     NomEntreprise: $("#Nom-Entreprise").val(),

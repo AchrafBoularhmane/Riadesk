@@ -4,8 +4,6 @@
   --second-color: #33baaa;
   --text-white-color: #f7f8fc;
   --text-grey-color: #002f3d;
-  --font-size-text-web: 16px;
-  --font-size-text-mobile: 15px;
   --padding-button-web: 10px 25px;
   --padding-button-mobile: 10px 20px;
 }
@@ -270,8 +268,8 @@ a[href^="tel"] {
   margin-bottom: 15px;
 }
 .LogoAndNavbar .logo a img {
-  width: 150px;
-  height: 100%;
+  width: 200px;
+  height: 50px;
   display: block;
 }
 .LogoAndNavbar .Navbar {
@@ -301,7 +299,7 @@ a[href^="tel"] {
 }
 .LogoAndNavbar .Navbar ul li span {
   color: var(--second-color);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   margin-right: 5px;
   display: none;
@@ -385,10 +383,11 @@ a[href^="tel"] {
 }
 .text p {
   color: var(--text-white-color);
-  font-size: var(--font-size-text-web);
+  font-size: 14px;
   margin: 20px 0;
   font-weight: 500;
   max-width: 500px;
+  text-align: justify;
 }
 .description-buttons a .btn1 {
   padding: var(--padding-button-web);
@@ -438,53 +437,59 @@ a[href^="tel"] {
   padding: 5px 0;
 }
 .bottom-description-container .all-parts .part1 {
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
   font-weight: 500;
-  padding: 5px 5px;
+  width: 40%;
 }
 .bottom-description-container .all-parts .part1 .part11 {
   border-right: 1px solid var(--second-color);
-  margin-right: 5px;
+  padding: 5px;
 }
 .bottom-description-container .all-parts .part1 .part11 p {
   color: var(--text-white-color);
   height: 100%;
+  font-size: 14px;
+}
+.bottom-description-container .all-parts .part1 .part12 {
+  padding: 5px;
 }
 .bottom-description-container .all-parts .part1 .part12 p {
   color: var(--text-white-color);
   padding-left: 10px;
+  font-size: 14px;
 }
 .bottom-description-container .all-parts .part2 {
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
   font-weight: 500;
   padding: 5px 5px;
+  width: 60%;
 }
 .bottom-description-container .all-parts .part2 .part21 {
   display: flex;
 }
-.bottom-description-container .all-parts .part2 .part21 {
-  margin-right: 5px;
+.bottom-description-container .all-parts .part2 .part21 div {
+  width: 33.33%;
+  padding: 0px 5px;
 }
 .bottom-description-container .all-parts .part2 .part21 h3 {
   color: var(--second-color);
   font-size: 14px;
   font-weight: bold;
-  padding-right: 5px;
 }
 .bottom-description-container .all-parts .part2 .part21 p {
   color: var(--text-white-color);
-  padding-right: 5px;
+  font-size: 14px;
 }
 .bottom-description-container .all-parts .part2 .part22 {
   border-left: 1px solid var(--second-color);
+  padding: 5px;
 }
 .bottom-description-container .all-parts .part2 .part22 p {
   color: var(--text-white-color);
   height: 100%;
-  padding-left: 10px;
-  padding-right: 3px;
+  font-size: 14px;
 }
 .bottom-description-container .next-section {
   min-width: 100px;
@@ -535,6 +540,8 @@ a[href^="tel"] {
   padding: 15px 0px;
   line-height: 22px;
   font-size: 13px;
+  text-align: justify;
+
   font-weight: 300;
   color: #a2a2a2;
 }
@@ -553,7 +560,7 @@ a[href^="tel"] {
   margin-right: 15px;
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -632,7 +639,7 @@ a[href^="tel"] {
     margin-bottom: 0px;
   }
   .home-section .icons ul li a i {
-    font-size: 14px;
+    font-size: 15px;
   }
   /* ICONS  RESPONSIVE Style END */
   /*LOGO AND NAVBAR RESPONSIVE Style START*/
@@ -648,10 +655,11 @@ a[href^="tel"] {
     float: top;
   }
   .LogoAndNavbar .logo {
-    max-width: 100px;
-  }
-  .LogoAndNavbar .logo a img {
     width: 100px;
+  }
+
+  .LogoAndNavbar .logo a img {
+    width: 140px;
     height: 40px;
     display: block;
   }
@@ -696,7 +704,7 @@ a[href^="tel"] {
     display: none;
   }
   .LogoAndNavbar .Navbar ul li a {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--text-white-color);
     text-transform: uppercase;
@@ -717,15 +725,15 @@ a[href^="tel"] {
     padding: 0px;
     border: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
   }
   .LogoAndNavbar .Navbar ul .contact-navbar a button:hover {
     color: var(--text-white-color);
   }
   .toggle {
     position: absolute;
-    top: 15px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     transform: translate(0px, 0px);
     cursor: pointer;
     z-index: 1;
@@ -918,41 +926,148 @@ a[href^="tel"] {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
   .home-section {
     min-width: 100%;
     min-height: 100vh;
   }
+  /*LOGO AND NAVBAR RESPONSIVE MIN TABLET Style START*/
   .LogoAndNavbar {
-    padding: 20px 20px 20px 10px;
+    padding: 10px 0px;
+    display: block;
+    z-index: 5;
+    position: relative;
   }
-  .fix-navbar {
-    z-index: 100000000000000000000000000000000000000000000000000000000000000000000;
-    position: fixed;
+  .LogoAndNavbar .logo,
+  .LogoAndNavbar .Navbar {
+    position: relative;
+    float: top;
+  }
+  .LogoAndNavbar .logo {
+    max-width: 300px;
+  }
+  .LogoAndNavbar .Navbar {
+    background: #00415afb;
+    position: absolute;
+    display: none;
     top: 0;
-    left: 0px;
-    width: 100%;
-    height: 80px;
-    transition: 1.5s;
-    background: var(--Primary-color);
-    padding: 0 40px !important;
+    right: 0;
+    width: 75%;
+    min-height: 100vh;
+    z-index: 1;
   }
-  .fix-navbar .Navbar {
-    display: flex;
-    justify-content: center;
+  .LogoAndNavbar .Navbar ul {
+    display: block;
     align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 70%;
+  }
+  .LogoAndNavbar .Navbar ul li {
+    padding: 20px 0;
+    list-style: none;
+    border-bottom: 0.5px solid #33baaa63;
     width: 100%;
   }
-  .fix-navbar .Navbar ul {
-    margin: 50% 0;
-    width: 100%;
+  .LogoAndNavbar .Navbar ul li:first-child {
+    border-top: 0.5px solid #33baaa63;
   }
-
-  .fix-navbar .Navbar ul li a {
-    color: #fff;
+  .LogoAndNavbar .Navbar ul li:nth-child(4) {
+    list-style: none;
+    margin-right: 0px;
+  }
+  .LogoAndNavbar .Navbar ul li:nth-child(1) {
+    list-style: none;
+    margin-left: auto;
+  }
+  .LogoAndNavbar .Navbar ul li span {
+    display: none;
+  }
+  .LogoAndNavbar .Navbar ul li a {
+    font-size: 15px;
     font-weight: 600;
+    color: var(--text-white-color);
+    text-transform: uppercase;
   }
-
+  .LogoAndNavbar .Navbar ul li a:hover {
+    color: var(--second-color);
+  }
+  .LogoAndNavbar .Navbar ul .contact-navbar {
+    margin-left: auto;
+    margin-right: 0;
+    justify-self: flex-end;
+  }
+  .LogoAndNavbar .Navbar ul .contact-navbar a {
+    text-decoration: none;
+  }
+  .LogoAndNavbar .Navbar ul .contact-navbar a button {
+    color: var(--text-white-color);
+    padding: 0px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .LogoAndNavbar .Navbar ul .contact-navbar a button:hover {
+    color: var(--text-white-color);
+  }
+  .toggle {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    transform: translate(0px, 0px);
+    cursor: pointer;
+    z-index: 1;
+  }
+  .toggle span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--text-white-color);
+    width: 45px;
+    height: 2.5px;
+    transition: 0.6s;
+  }
+  .toggle .one {
+    top: 0;
+  }
+  .toggle .two,
+  .toggle .three {
+    top: 16px;
+    background: var(--second-color);
+    width: 40px;
+  }
+  .toggle .four {
+    top: 30px;
+    background: var(--text-white-color);
+    width: 35px;
+  }
+  .LogoAndNavbar .Show-Hamburger-icon {
+    background: var(--second-color);
+    padding: 18px 19px;
+  }
+  .LogoAndNavbar .Show-Hamburger-icon .one,
+  .LogoAndNavbar .Show-Hamburger-icon .four {
+    display: none;
+  }
+  .LogoAndNavbar .Show-Hamburger-icon .two {
+    transform: rotate(45deg);
+    width: 38px;
+    background: var(--text-white-color);
+    transition: 2s;
+  }
+  .LogoAndNavbar .Show-Hamburger-icon .three {
+    transform: rotate(-45deg);
+    width: 38px;
+    background: var(--text-white-color);
+    transition: 2s;
+  }
+  .LogoAndNavbar .Show-Mobile-Menu {
+    display: block;
+  }
+  /*LOGO AND NAVBAR RESPONSIVE TABLET Style END*/
   .home-description-container {
     padding: 0px 20px;
   }
@@ -1000,6 +1115,7 @@ a[href^="tel"] {
     z-index: 100000000000000000000000000000000000000000000000000000000;
     transition: 1.5s;
     padding: 0 80px !important;
+    background: var(--Primary-color);
   }
   .fix-navbar .Navbar {
     display: flex;
@@ -1071,7 +1187,7 @@ a[href^="tel"] {
 .about-section {
   min-height: 100vh;
   width: 100%;
-  background: var(--text-white-color);
+  background: #fff;
   display: flex;
 }
 .padding-section {
@@ -1081,13 +1197,6 @@ a[href^="tel"] {
   position: relative;
   width: 65%;
   height: 100%;
-  margin-right: 20px;
-}
-.section-text .about-title .small {
-  font-size: 14px;
-  color: var(--text-grey-color);
-  font-weight: 600;
-  text-transform: uppercase;
 }
 .medium {
   display: flex;
@@ -1101,19 +1210,20 @@ a[href^="tel"] {
 }
 
 .medium h1 {
-  font-size: 25px;
   color: var(--Primary-color);
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   margin: auto 0;
   margin-left: 5px;
 }
 .section-text .text p {
-  min-width: 75%;
-  font-size: 16px;
+  min-width: 80%;
+  font-size: 15px;
   color: var(--text-grey-color);
   font-weight: 500;
-  line-height: 27px;
+  line-height: 26px;
+  margin-top: 20px;
+  text-align: justify;
 }
 .section-text .text p span {
   color: var(--Primary-color);
@@ -1121,36 +1231,28 @@ a[href^="tel"] {
 }
 .section-button {
   display: flex;
+  margin-top: -10px;
 }
 .section-button .link1 {
   padding: var(--padding-button-web);
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
   background: var(--Primary-color);
   color: var(--text-white-color);
   text-decoration: none;
   margin-right: 20px;
   text-transform: uppercase;
+  border: 1px solid var(--Primary-color);
 }
-.section-button .link1:hover,
-.section-button a:hover {
+.section-button .link1:hover {
   background: var(--second-color);
   border: 1px solid var(--second-color);
   color: var(--text-white-color);
 }
-.section-button a {
-  padding: var(--padding-button-web);
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--Primary-color);
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid var(--Primary-color);
-}
 .about-picture {
   position: relative;
-  min-height: 400px;
-  width: 30%;
+  height: 400px;
+  width: 35%;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
@@ -1170,7 +1272,7 @@ a[href^="tel"] {
   position: relative;
   z-index: 3;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   object-fit: cover;
 }
 .about-picture .about-pic-bg2 {
@@ -1178,7 +1280,7 @@ a[href^="tel"] {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 300px;
   background: var(--Primary-color);
   z-index: 4;
   opacity: 0.1;
@@ -1194,6 +1296,9 @@ a[href^="tel"] {
   .section-text {
     width: 100%;
     margin-bottom: 50px;
+  }
+  .section-text p {
+    text-align: left !important;
   }
   .about-picture {
     width: 100%;
@@ -1263,14 +1368,12 @@ a[href^="tel"] {
   }
   .about-picture {
     width: 35%;
-    height: 500px;
   }
   .section-button .link1 {
     padding: 10px 25px;
     margin-right: 10px;
   }
   .medium h1 {
-    font-size: 25px;
     margin-left: 10px;
   }
   .about-picture .about-pic-bg {
@@ -1302,8 +1405,8 @@ a[href^="tel"] {
     margin-right: 10px;
   }
   .medium h1 {
-    font-size: 25px;
     margin-left: 10px;
+    font-size: 25px;
   }
   .about-picture .about-pic-bg {
     top: 25px;
@@ -1317,15 +1420,16 @@ a[href^="tel"] {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*@media only screen and (min-width: 1200px) {
-}*/
+}
+*/
 
-/*------------------------------------------------------INFO SUP1 SECTION---------------------------------------------------------*/
-.info-sup1 {
+/*------------------------------------------------------ESPACE DE TRAVAIL SECTION---------------------------------------------------------*/
+.espace-travail {
   position: relative;
   height: 100%;
   width: 100%;
 }
-.info-sup1 .info-sup-img {
+.espace-travail .espace-travail-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1337,7 +1441,7 @@ a[href^="tel"] {
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
-.info-sup1 .info-sup-img-bg {
+.espace-travail .espace-travail-img-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1346,7 +1450,7 @@ a[href^="tel"] {
   background: var(--Primary-color);
   opacity: 0.1;
 }
-.info-sup-content {
+.espace-travail-content {
   position: relative;
   width: 50%;
   height: 100%;
@@ -1354,58 +1458,70 @@ a[href^="tel"] {
   margin-left: auto;
   padding: 50px 200px;
 }
-.info-sup-content .medium h1 {
+.espace-travail-content .medium h1 {
   color: var(--text-white-color);
-  font-size: 27px;
+  font-size: 25px;
 }
-.info-sup-content .text p {
+.espace-travail-content .text p {
   color: var(--text-white-color);
   font-weight: 400;
+  font-size: 15px;
 }
-.info-sup-content .text p span {
+.espace-travail-content .text p span {
   color: var(--second-color);
 }
-.info-sup-content .section-button .link1 {
+.espace-travail-content .section-button .link1 {
   background: var(--second-color);
   font-weight: bold;
+  font-size: 14px;
 }
-.info-sup-content .section-button .link1:hover {
+.espace-travail-content .section-button .link1:hover {
   background: var(--text-white-color);
   color: var(--Primary-color);
   border-color: var(--text-white-color);
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .info-sup-content {
+  .espace-travail-content {
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 20px;
     margin: auto;
   }
-  .info-sup-content .medium h1 {
-    font-size: 20px;
+  .espace-travail-content .medium h1 {
+    font-size: 18px;
+  }
+  .espace-travail-content .section-button .link1 {
+    margin-top: 20px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .info-sup-content {
+  .espace-travail-content {
     width: 50%;
     padding: 30px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .espace-travail-content {
+    width: 70%;
+    padding: 20px 20px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .info-sup-content {
-    width: 50%;
+  .espace-travail-content {
+    width: 70%;
     padding: 50px 70px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {
-}*/
+@media only screen and (min-width: 1200px) {
+  .espace-travail-content {
+    width: 50%;
+  }
+}
 
 /*------------------------------------------------------SERVICE SECTION---------------------------------------------------------*/
 .service-section {
@@ -1458,6 +1574,8 @@ a[href^="tel"] {
   color: var(--text-grey-color);
   text-align: center;
   font-weight: 500;
+  width: 100%;
+  font-size: 16px;
   line-height: 24px;
 }
 .services {
@@ -1477,6 +1595,9 @@ a[href^="tel"] {
   padding: 20px;
   height: 100%;
   width: 330px;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 17px -8px #000000;
+  box-shadow: 0px 4px 17px -8px #000000;
 }
 .service6 {
   background: chartreuse;
@@ -1505,9 +1626,10 @@ a[href^="tel"] {
 .title-service p {
   text-align: center;
   color: var(--text-grey-color);
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .style-title-service {
   width: 4px;
@@ -1517,7 +1639,7 @@ a[href^="tel"] {
 }
 .services .service .points p {
   color: var(--text-grey-color);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 25px;
 }
@@ -1535,7 +1657,7 @@ a[href^="tel"] {
 .services .service .details a {
   display: inline-block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-grey-color);
   font-weight: bold;
   text-transform: uppercase;
@@ -1543,33 +1665,34 @@ a[href^="tel"] {
 }
 .services .service .details a:hover {
   transform: 2s;
-  font-size: 15px;
+  font-size: 14px;
+  transition: 0.8s;
 }
 
 .services .service .service-img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .services .service .service-img .service-img-style {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 300px;
   background: var(--second-color);
   z-index: 3;
-  margin-top: 20px;
-  margin-left: +20px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .services .service .service-img img {
   z-index: 2;
   display: block;
   position: relative;
-  width: 320px;
-  height: 350px;
+  width: 100%;
+  height: 300px;
   z-index: 100000000;
   object-fit: cover;
 }
@@ -1596,10 +1719,6 @@ a[href^="tel"] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-  }
-  .services .service .service-img img {
-    width: 100%;
-    height: 350px;
   }
 }
 
@@ -1631,174 +1750,144 @@ a[href^="tel"] {
 @media only screen and (min-width: 768px) {
   .services {
     display: flex;
+    justify-content: space-between;
     padding: 100px 0px 0px 0px;
+  }
+  .services .service {
+    margin-right: 20px;
+  }
+  .title-service p {
+    font-size: 13px;
+  }
+  .services .service:last-child {
+    margin-right: 0px;
   }
   .services .service .service-img {
     width: 100%;
     height: 100%;
   }
+  .services .service .details a {
+    font-size: 11px;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {
-}*/
+@media only screen and (min-width: 992px) {
+  .services {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .services {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0px 0px 0px;
+  }
+  .services:last-child {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .services:last-child .service {
+    margin: 0 auto;
+  }
+  .services .service {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    width: 330px;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 17px -8px #000000;
+    box-shadow: 0px 4px 17px -8px #000000;
+  }
+  .service6 {
+    background: chartreuse;
+    display: none;
+  }
+  .services .service:nth-child(2) {
+    margin-top: 20px;
+  }
+  .services .service:nth-child(1) {
+    margin-top: 40px;
+  }
+  .services .service .service-style {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #33baaac0;
+    z-index: 1000000000;
+    opacity: 1;
+    padding: 20px 50px;
   }
   .services .service .service-img img {
-    width: 280px;
-    height: 350px;
+    width: 100%;
+    height: 300px;
   }
   .description .texto {
     width: 100%;
     padding: 0px 180px;
     margin-top: 20px;
   }
-}
-/*------------------------------------------------------INFO SUP 2 SECTION---------------------------------------------------------*/
-.info-sup2 {
-  width: 100%;
-  height: 100%;
-}
-.info-sup2-container {
-  display: flex;
-  width: 100%;
-}
-.info-sup2-description {
-  height: 100%;
-  width: 50%;
-  background: var(--Primary-color);
-  padding: 80px;
-}
-.info-sup2-title h1 {
-  color: var(--text-white-color);
-}
-.info-sup2-img {
-  display: block;
-  width: 50%;
-  position: relative;
-}
-.info-sup2-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.info-sup2-description .section-button a {
-  background: var(--Primary-color);
-  border: 1px solid var(--second-color);
-  color: var(--second-color);
-}
-.info-sup2-description .section-button a:hover {
-  background: var(--second-color);
-  border: 1px solid var(--second-color);
-  color: var(--text-white-color);
-}
-.info-sup2-text p {
-  line-height: 27px;
-}
-.info-sup2-text p span {
-  color: var(--second-color);
-  font-weight: 700;
-}
-.info-sup2-img-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--Primary-color);
-  opacity: 0.1;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .info-sup2-container {
-    display: block;
+  .services .service .details a {
+    font-size: 13px;
   }
-  .info-sup2-img {
-    width: 100%;
-    height: 100%;
+  .services .service {
+    margin-right: 0px;
   }
-  .info-sup2-description {
-    width: 100%;
-    padding: 80px 10px;
-  }
-  .info-sup2-img img {
-    display: block;
-    min-height: 350px;
+  .title-service p {
+    font-size: 16px;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .info-sup2-description {
-    width: 100%;
-    padding: 80px 20px;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-/*@media only screen and (min-width: 768px) {
-}*/
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .info-sup2-description {
-    padding: 80px;
-    width: 50%;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {
-}*/
-/*------------------------------------------------------OFFRE PART 2 SECTION---------------------------------------------------------*/
-.offre-section {
+/*------------------------------------------------------concept PART 2 SECTION---------------------------------------------------------*/
+.concepts-section {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: var(--Primary-color);
 }
-.offre-section .section-bg-img img {
+.concepts-section .section-bg-img img {
   width: 100%;
   height: 100%;
   z-index: 0;
   opacity: 0.1;
 }
-.offre-section .description {
+.concepts-section .description {
   position: relative;
   display: block;
 }
-.offre-section .description .titlo h1 {
+.concepts-section .description .titlo h1 {
   color: var(--text-white-color);
 }
-.offre-section .description .texto p {
+.concepts-section .description .texto p {
   color: var(--text-white-color);
 }
-.offres-container {
+.concepts-container {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-.offres-container .offre {
+.concepts-container .concept {
   display: block;
   margin-right: 20px;
 }
-.offres-container .offre:last-child {
+.concepts-container .concept:last-child {
   margin-right: 0px;
 }
-.offres-container .offre .icon-offre {
+.concepts-container .concept .icon-concept {
   display: flex;
 }
-.offres-container .offre .icon-offre svg {
+.concepts-container .concept .icon-concept svg {
   background: var(--second-color);
   margin: auto;
   border-radius: 50%;
   padding: 20px;
 }
-.offres-container .offre .offre-description {
+.concepts-container .concept .concept-description {
   color: var(--text-white-color);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   padding: 15px 0px;
   margin: auto;
@@ -1806,10 +1895,10 @@ a[href^="tel"] {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .offres-container {
+  .concepts-container {
     display: block;
   }
-  .offres-container .offre {
+  .concepts-container .concept {
     padding: 20px 0px;
   }
 }
@@ -1927,7 +2016,7 @@ a[href^="tel"] {
 
 .Contact-section .contact .contact-container .contactInfo .box .text p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   display: block;
   margin: 0;
   padding: 5px 0px;
@@ -2035,7 +2124,7 @@ a[href^="tel"] {
   background: var(--Primary-color);
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 27.3px;
   font-weight: 500;
   color: var(--text-white-color);
@@ -2612,7 +2701,7 @@ a[href^="tel"] {
   background: var(--Primary-color);
   padding: 20px 60px;
   color: var(--text-white-color);
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -2626,7 +2715,7 @@ a[href^="tel"] {
   text-transform: uppercase;
   color: var(--text-white-color);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
 }
 .Copyright a:hover {
