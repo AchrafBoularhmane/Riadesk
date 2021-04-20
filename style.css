@@ -2697,11 +2697,12 @@ a[href^="tel"] {
 /*@media only screen and (min-width: 1200px) {
 }*/
 /*---------------------------------------------------------COPYRIGHT---------------------------------------------------*/
+/*---------------------------------------------------------COPYRIGHT---------------------------------------------------*/
 .Copyright {
   background: var(--Primary-color);
   padding: 20px 60px;
   color: var(--text-white-color);
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -2715,7 +2716,7 @@ a[href^="tel"] {
   text-transform: uppercase;
   color: var(--text-white-color);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
 }
 .Copyright a:hover {
@@ -2749,4 +2750,4 @@ a[href^="tel"] {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*@media only screen and (min-width: 1200px) {
-}*/
+  }*/
