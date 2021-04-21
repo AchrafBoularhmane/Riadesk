@@ -1567,11 +1567,7 @@ a[href^="tel"] {
 .description .texto {
   padding: 0px 180px;
   margin-top: 20px;
-  display: block;
-  position: relative;
-  background: pink;
   height: 100%;
-  width: 100% !important;
 }
 .description .texto p {
   font-size: var(--font-size-text-web);
@@ -1580,10 +1576,6 @@ a[href^="tel"] {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  display: block;
-  position: relative;
-  background: pink;
-  width: 100% !important;
   height: 100%;
 }
 .services {
