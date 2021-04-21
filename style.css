@@ -1565,18 +1565,24 @@ a[href^="tel"] {
   font-weight: 800;
 }
 .description .texto {
-  width: 100%;
   padding: 0px 180px;
   margin-top: 20px;
+  display: block;
+  position: relative;
+  background: red;
+  width: 100% !important;
 }
 .description .texto p {
   font-size: var(--font-size-text-web);
   color: var(--text-grey-color);
   text-align: center;
   font-weight: 500;
-  width: 100%;
   font-size: 16px;
   line-height: 24px;
+  display: block;
+  position: relative;
+  background: red;
+  width: 100% !important;
 }
 .services {
   display: flex;
@@ -1826,10 +1832,6 @@ a[href^="tel"] {
     height: 300px;
   }
   .description .texto {
-    display: block;
-    position: relative;
-    background: yellow;
-    width: 100% !important;
     padding: 0px 180px;
     margin-top: 20px;
   }
