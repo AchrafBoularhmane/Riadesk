@@ -1266,14 +1266,14 @@ a[href^="tel"] {
   .service-details .service-content .title h2 {
     font-size: 18px;
   }
-  .service-details .service-img img {
-    width: 95%;
-    min-height: 290px;
-  }
   .service-details .service-img {
     width: 100%;
-    height: 320px;
+    min-height: 300px;
     margin-bottom: 50px;
+  }
+  .service-details .service-img img {
+    width: 95%;
+    height: 300px;
   }
   .service-details .service-img .service-img-style {
     position: absolute;

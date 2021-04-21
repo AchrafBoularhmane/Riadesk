@@ -1289,6 +1289,7 @@ a[href^="tel"] {
 @media only screen and (max-width: 600px) {
   .about-section {
     display: block;
+    min-height: 100%;
   }
   .padding-section {
     padding: 80px 10px;
@@ -1302,7 +1303,6 @@ a[href^="tel"] {
   }
   .about-picture {
     width: 100%;
-    height: 100%;
   }
   .section-button .link1 {
     padding: var(--padding-button-mobile);
