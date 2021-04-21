@@ -1727,12 +1727,19 @@ a[href^="tel"] {
   .services {
     display: block;
     padding: 100px 100px 0px 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   .service {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .service:last-child {
+  .services:last-child {
     margin-bottom: 0px;
+    display: block !important;
+    justify-content: center;
   }
   .services .service .service-img {
     width: 100%;
@@ -1752,6 +1759,10 @@ a[href^="tel"] {
     display: flex;
     justify-content: space-between;
     padding: 100px 0px 0px 0px;
+  }
+  .services:last-child {
+    display: flex !important;
+    justify-content: center;
   }
   .services .service {
     margin-right: 20px;
