@@ -1627,7 +1627,6 @@ a[href^="tel"] {
   text-align: center;
   color: var(--text-grey-color);
   font-weight: 600;
-  font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1847,7 +1846,7 @@ a[href^="tel"] {
     margin-right: 0px;
   }
   .title-service p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 /*------------------------------------------------------concept PART 2 SECTION---------------------------------------------------------*/
