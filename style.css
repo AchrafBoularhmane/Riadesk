@@ -1578,6 +1578,10 @@ a[href^="tel"] {
   line-height: 24px;
   height: 100%;
 }
+.contact-service {
+  color: var(--second-color);
+  text-decoration: none;
+}
 .services {
   display: flex;
   justify-content: space-between;
